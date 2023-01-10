@@ -2,8 +2,8 @@ services:
     postgres:
         image: postgres
         volumes:
-            -   ./script.sql:/docker-entrypoint-initdb.d/script.sql
+            - ./script.sql:/docker-entrypoint-initdb.d/script.sql
         environment:
             POSTGRES_PASSWORD: "1234"
         ports:
-            -   "5432:5432"
+            - "5432:5432"
